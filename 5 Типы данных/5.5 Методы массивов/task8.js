@@ -1,0 +1,18 @@
+let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+let petya = { name: "Петя", surname: "Иванов", id: 2 };
+let masha = { name: "Маша", surname: "Петрова", id: 3 };
+
+let users = [vasya, petya, masha];
+
+let usersMapped = users.map((user) => ({
+  fullName: `${user.name} ${user.surname}`,
+  id: user.id
+}));
+
+console.log(usersMapped[0].id);
+console.log(usersMapped[0].fullName);
+console.log(usersMapped[1].id);
+console.log(usersMapped[1].fullName);
+console.log(usersMapped[2].id);
+console.log(usersMapped[2].fullName);
+console.log(usersMapped)
